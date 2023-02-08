@@ -10,7 +10,7 @@ export const getFormatTime = (dateData) => {
 	let localDate = new Date(dateData);
 
 	let hours = localDate.getHours();
-	let minutes = localDate.getMinutes().slice(-2);
+	let minutes = ("0" + localDate.getMinutes()).slice(-2);
 	let ampm = hours >= 12 ? "pm" : "am";
 	hours = hours % 12 || 12;
 	hours = hours.slice(-2);
