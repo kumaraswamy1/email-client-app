@@ -1,0 +1,55 @@
+.body-header{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.body-header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fav-btn{
+    background: var(--accent-color);
+    color: white;
+    border-radius: 2rem;
+   padding: 0.75rem 1rem;
+    border:none;
+}
+
+
+.aside:empty {
+  display: none;
+}
+
+.layout {
+ display: grid;
+ grid-template-columns: 40% 60%;
+ 
+}
+.empty-list{
+margin:2rem;
+}
+
+
+.slave{
+    margin: 2rem;
+    border: 0.1rem solid slategrey;
+     height: 45rem;
+    align-items: start;
+    border-radius:0.5rem;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+}
+
+.email-body	{
+            padding-top :1rem;
+        }		
+       
+.body-header-details{
+padding: 1rem;
+}
