@@ -3,9 +3,7 @@ import axios from "axios";
 
 export const fetchEmail = createAsyncThunk("email/fetchEmail ", async () => {
 	try {
-		const { data } = await axios.get(
-			"https://flipkart-email-mock.now.sh/?page=1 "
-		);
+		const { data } = await axios.get("https://flipkart-email-mock.vercel.app/");
 		return data;
 	} catch (error) {
 		console.error(error);
