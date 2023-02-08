@@ -2,8 +2,9 @@ import { useSelector } from "react-redux";
 import { ListCard } from "../../Components/ListCard/ListCard";
 
 export const EmailList = () => {
-	const { status, emails, error, body, currentFilter, read, favorites } =
-		useSelector((state) => state.emails);
+	const { emails, currentFilter, read, favorites } = useSelector(
+		(state) => state.emails
+	);
 
 	if (currentFilter === "Read") {
 		return (
